@@ -1,0 +1,27 @@
+<launch>
+	<group ns="camera">
+		<node pkg="libuvc_camera" type="camera_node" name="mycam">
+			<!-- Parameters used to find the camera -->
+			<param name="vendor" value="0x32e4"/>
+			<param name="product" value="0x4689"/>
+			<param name="serial" value="3"/>
+			<!-- If the above parameters aren't unique, choose the first match: -->
+			<param name="index" value="0"/>
+			<!-- Image size and type -->
+			<param name="width" value="640"/>
+			<param name="height" value="360"/>
+			<!-- choose whichever uncompressed format the camera supports: -->
+			<param name="video_mode" value="mjpeg"/>
+			<!-- or yuyv/nv12/mjpeg -->
+			<param name="frame_rate" value="260"/>
+			<param name="timestamp_method" value="start"/>
+			<!-- start of frame -->
+
+			<param name="auto_white_balance" value="true"/>
+		</node>
+	</group>
+	<!-- <node pkg="image_view" type="image_view" name="image_view_test" output="screen"> -->
+	<node name="rqt_gui" pkg="rqt_gui" type="rqt_gui">
+		<remap from="image" to="/camera/image_raw"/>
+	</node>
+</launch>

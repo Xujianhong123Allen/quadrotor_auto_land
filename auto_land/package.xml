@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>auto_land</name>
+  <version>0.0.0</version>
+  <description>The auto_land package</description>
+  <maintainer email="jianhongxu1006@gmail.com">Jianhong Xu</maintainer>
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_export_depend>roscpp</build_export_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>rospy</exec_depend>
+
+  <export>
+
+  </export>
+</package>

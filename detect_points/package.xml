@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="2">
+	<name>detect_points</name>
+	<version>0.5.1</version>
+	<description>Detect image feature points.</description>
+	<maintainer email="jianhongxu1006@gmail.com">Jianhong Xu</maintainer>
+	<license>Apache License 2.0</license>
+	<author>Jianhong Xu</author>
+
+	<buildtool_depend>catkin</buildtool_depend>
+
+	<build_depend>roscpp</build_depend>
+	<build_depend>std_msgs</build_depend>
+	<build_depend>sensor_msgs</build_depend>
+	<build_depend>geometry_msgs</build_depend>
+	<build_depend>image_transport</build_depend>
+	<build_depend>cv_bridge</build_depend>
+
+	<exec_depend>roscpp</exec_depend>
+	<exec_depend>std_msgs</exec_depend>
+	<exec_depend>sensor_msgs</exec_depend>
+	<exec_depend>geometry_msgs</exec_depend>
+	<exec_depend>image_transport</exec_depend>
+	<exec_depend>cv_bridge</exec_depend>
+
+	<export>
+		<build_type>catkin</build_type>
+	</export>
+</package>

@@ -1,0 +1,45 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<sdf version="1.4">
+	<model name="pattern">
+    	<static>true</static>
+    	<link name="link">
+			<pose>0 0 0.115 0 0 0</pose>
+    		<inertial>
+        		<mass>0.390</mass>
+        		<inertia>
+          			<ixx>0.00058</ixx>
+          			<ixy>0</ixy>
+          			<ixz>0</ixz>
+          			<iyy>0.00058</iyy>
+          			<iyz>0</iyz>
+          			<izz>0.00019</izz>
+        		</inertia>
+			</inertial>
+
+        	<collision name='collision'>
+        		<geometry>
+                	<box>
+                  		<size>.7 .9 .01</size>
+                	</box>
+        		</geometry>
+      		</collision>
+
+         	<visual name="visual">
+            	<cast_shadows>false</cast_shadows>
+            	<geometry>
+               		<box>
+                		<size>.7 .9 .01</size>
+                	</box>
+            	</geometry>
+            	<material>
+               		<script>
+                		<uri>model://pattern/materials/scripts</uri>
+                		<uri>model://pattern/materials/textures/</uri>
+                		<name>Pattern/Image</name>
+               		</script>
+            	</material>
+        	</visual>
+      	</link>
+   </model>
+</sdf>
